@@ -1,19 +1,16 @@
 import React, {Component} from 'react';
-import Iconimg from './iconimg';
+import Iconimg from './iconimg.js';
 
 class CharacterCard extends Component{
-  constructor(props){
-    super(props);
-  }
-
   render(){
     return(
       <div className= "Container">
-        <Iconimg />
+        <Iconimg
+        avatar={this.props.photo}
+        />
         <p>{this.props.title}</p>
-        <img src={this.props.photo}/>
+        <p>{this.props.gender}</p>
       </div>
-
     );
   }
 }

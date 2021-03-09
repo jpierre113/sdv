@@ -9,8 +9,15 @@ class App extends Component {
       characters:[
         {
           name: "Robin",
-          photo: "./robin.png"
+          photo: "./robin.png",
+          gender: "female"
+        },
+        {
+          name: "Shane",
+          photo: "./shane.png",
+          gender: "male"
         }
+
       ]
     }
   }
@@ -24,6 +31,7 @@ class App extends Component {
                 <CharacterCard
                   title={character.name}
                   photo={character.photo}
+                  gender={character.gender}
                   //{...character}
                   key={index}
                 />
