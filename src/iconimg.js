@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Iconimg extends Component{
   render(){
     return(
-      <div class="ImageContainer">
+      <div className="ImageContainer">
 
         <img src={this.props.avatar} alt=""/>
       </div>
