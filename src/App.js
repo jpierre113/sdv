@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import CharacterCard from './characterCard.js';
+import CharacterModal from './characterModal.js';
 
 class App extends Component {
   constructor(props){
@@ -21,22 +22,16 @@ class App extends Component {
           birthday: "Spring 20",
           about:"Shane lives with his aunt Marnie and rents a room at her ranch, where he helps out by taking care of the chickens. He also works as a stock clerk at JoJaMart and spends his free time in the Stardrop Saloon."
         }
-      ]
+      ],
+      showCharacterModal:false
     }
   }
 
-  componentWillMount() {
-        let key = "Robin";
-    this.setState(prevState => ({
-      characters: prevState.characters.map((character, index) => {
-        return (
-         key === character.name ? {...character, name: "Sebastian"} : character
-       )
-      })
-    }))
-
+  setModalState(showCharacterModal) {
+    this.setState({
+      showCharacterModal: showCharacterModal
+    });
   }
-
 
   render () {
     return (
@@ -46,13 +41,17 @@ class App extends Component {
               return (
                 <CharacterCard
                   title={character.name}
-                  photo={character.photo}
+                  photo={character.photo} onClick={this.setModalState.bind(this, true)}
                   gender={character.gender}
                   //{...character}
                   key={index}
+
                 />
               )
             })
+            <CharacterModal isOpen={ this.state.showCharacterModal }>
+              <img src={ character.photo } onClick={ this.setModalState.bind(this, false) } />
+            </CharacterModal>
           }
 
       </div>
