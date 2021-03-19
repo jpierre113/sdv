@@ -31,7 +31,7 @@ hideCharacterModal = () => {
         <CharacterModal show={this.state.showCharacterModal} handleClose={this.state.hideCharacterModal}>
           <p>Model</p>
         </CharacterModal>
-        <button type="button" onClick={this.state.showCharacterModal}> Open </button>
+        <button type="button" onClick={this.showCharacterModal}> Open </button>
       </div>
     );
   }
