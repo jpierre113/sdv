@@ -28,7 +28,7 @@ hideCharacterModal = () => {
         />
         <p>{this.props.title}</p>
         <p>{this.props.gender}</p>
-        <CharacterModal show={ this.showCharacterModal } handleClose={this.hideCharacterModal}>
+        <CharacterModal showCharacterModal={ this.showCharacterModal } handleClose={this.hideCharacterModal}>
           <p>Model</p>
         </CharacterModal>
         <button type="button" onClick={this.showCharacterModal}> Open </button>
