@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css';
 import CharacterCard from './characterCard.js';
 
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -25,19 +26,6 @@ class App extends Component {
     }
   }
 
-  componentWillMount() {
-        let key = "Robin";
-    this.setState(prevState => ({
-      characters: prevState.characters.map((character, index) => {
-        return (
-         key === character.name ? {...character, name: "Sebastian"} : character
-       )
-      })
-    }))
-
-  }
-
-
   render () {
     return (
       <div className="App">
@@ -48,13 +36,13 @@ class App extends Component {
                   title={character.name}
                   photo={character.photo}
                   gender={character.gender}
+                  about={character.about}
                   //{...character}
                   key={index}
                 />
               )
             })
           }
-
       </div>
     );
   }
