@@ -1,7 +1,7 @@
 import './characterModal.css'
 
-const CharacterModal = ({handleClose, showCharacterModal, children}) => {
-  const showHideClassName = showCharacterModal ? "modal display-block" : "modal display-none";
+const CharacterModal = ({handleClose, show, children}) => {
+  const showHideClassName = show ? "modal display-block" : "modal display-none";
 
   return(
     <div className={showHideClassName}>
