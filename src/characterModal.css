@@ -7,7 +7,7 @@
   background: rgba(0, 0, 0, 0.6);
 }
 
-.modal-main {
+.modal-container {
   position:fixed;
   background: white;
   width: 80%;
