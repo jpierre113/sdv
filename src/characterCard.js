@@ -29,7 +29,7 @@ hideCharacterModal = () => {
         <p>{this.props.title}</p>
         <p>{this.props.gender}</p>
         <CharacterModal show={this.state.show} handleClose={this.hideCharacterModal}>
-          <p>Model</p>
+          <p>{this.props.about}</p>
         </CharacterModal>
         <button type="button" onClick={this.showCharacterModal}> Open </button>
       </div>

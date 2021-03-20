@@ -36,6 +36,7 @@ class App extends Component {
                   title={character.name}
                   photo={character.photo}
                   gender={character.gender}
+                  about={character.about}
                   //{...character}
                   key={index}
                 />
