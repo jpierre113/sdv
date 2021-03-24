@@ -22,12 +22,11 @@ hideCharacterModal = () => {
 
   render(){
     return(
-      <div className= "Container">
+      <div className= "characterContainer">
         <Iconimg
         avatar={this.props.photo}
         />
         <p>{this.props.title}</p>
-        <p>{this.props.gender}</p>
         <CharacterModal show={this.state.show} handleClose={this.hideCharacterModal}>
           <p>{this.props.about}</p>
         </CharacterModal>
