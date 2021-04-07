@@ -1,18 +1,34 @@
 import './characterModal.css'
+import {Component} from 'react';
+import {Modal, Button} from 'react-bootstrap';
 
-const CharacterModal = ({handleClose, show, children}) => {
-  const showHideClassName = show ? "modal display-block" : "modal display-none";
+class CharacterModal extends Component {
+  constructor() {
+    super()
+    this.state={
+      show:false
+    }
+  }
 
-  return(
-    <div className={showHideClassName}>
-      <div className="modal-container">
-        {children}
-        <button type="button" onClick={handleClose}>
-          Close
-        </button>
-      </div>
+  handleModal(){
+    this.setState({show:!this.state.show})
+  }
+
+render(){
+  return (
+    <div>
+    <Button onClick={() => {this.handleModal()}}> Open </Button>
+    <Modal show={this.state.show}>
+      <Modal.Header> Character Name </Modal.Header>
+      <Modal.Body> sample text </Modal.Body>
+      <Modal.Footer>
+        <Button onClick={() => {this.handleModal()}}> Close </Button>
+      </Modal.Footer>
+    </Modal>
     </div>
-  );
-};
+
+    );
+  }
+}
 
 export default CharacterModal;

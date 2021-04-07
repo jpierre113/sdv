@@ -1,12 +1,12 @@
-.App {
+/* .App {
   text-align: center;
-  display: grid;
   justify-content: space-evenly;
   margin: auto;
   background-color: #7eca9c;
+  columns: 3 auto;
 }
 
 .characterContainer {
   width: 150px;
   height: 300px;
-}
+} */
