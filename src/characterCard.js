@@ -30,7 +30,6 @@ hideCharacterModal = () => {
         <CharacterModal show={this.state.show} handleClose={this.hideCharacterModal}>
           <p>{this.props.about}</p>
         </CharacterModal>
-        <button type="button" onClick={this.showCharacterModal}> Open </button>
       </div>
     );
   }
