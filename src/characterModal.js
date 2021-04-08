@@ -1,5 +1,5 @@
 import './characterModal.css'
-import {Component} from 'react';
+import React, {Component} from 'react';
 import {Modal, Button} from 'react-bootstrap';
 
 class CharacterModal extends Component {
@@ -18,7 +18,7 @@ render(){
   return (
     <div>
     <Button onClick={() => {this.handleModal()}}> Open </Button>
-    <Modal show={this.state.show}>
+    <Modal show={this.state.show} centered>
       <Modal.Header> Character Name </Modal.Header>
       <Modal.Body> sample text </Modal.Body>
       <Modal.Footer>
