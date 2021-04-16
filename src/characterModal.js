@@ -19,8 +19,8 @@ render(){
     <div>
     <Button onClick={() => {this.handleModal()}}> Open </Button>
     <Modal show={this.state.show} centered>
-      <Modal.Header> Character Name </Modal.Header>
-      <Modal.Body> sample text </Modal.Body>
+      <Modal.Header> {this.props.title} </Modal.Header>
+      <Modal.Body> {this.props.about} </Modal.Body>
       <Modal.Footer>
         <Button onClick={() => {this.handleModal()}}> Close </Button>
       </Modal.Footer>

@@ -27,8 +27,10 @@ hideCharacterModal = () => {
         avatar={this.props.photo}
         />
         <p>{this.props.title}</p>
-        <CharacterModal show={this.state.show} handleClose={this.hideCharacterModal}>
-          <p>{this.props.about}</p>
+        <CharacterModal show={this.state.show}
+          handleClose={this.hideCharacterModal}
+          about={this.props.about}
+          title={this.props.title}>
         </CharacterModal>
       </div>
     );
