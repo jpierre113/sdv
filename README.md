@@ -1,4 +1,4 @@
-# Stardew Valley
+# Stardew Directory
 
 A directory for the characters of the game Stardew Valley. Click on the button to display more information about the character
 
