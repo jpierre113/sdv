@@ -17,7 +17,7 @@ class CharacterModal extends Component {
 render(){
   return (
     <div>
-    <Button onClick={() => {this.handleModal()}}> Open </Button>
+    <Button variant="success" onClick={() => {this.handleModal()}}> Open </Button>
     <Modal show={this.state.show} centered>
       <Modal.Header> {this.props.title} </Modal.Header>
       <Modal.Body> {this.props.about} </Modal.Body>

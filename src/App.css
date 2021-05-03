@@ -1,11 +1,7 @@
-/* .App {
-  text-align: center;
-  justify-content: space-evenly;
-  margin: auto;
-  background-color: #7eca9c;
-  columns: 3 auto;
+.App {
+background-color: #90d8f0;
+text-align: center;
 }
-*/
 
 .characterContainer {
   height: 300px;
