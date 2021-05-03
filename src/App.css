@@ -1,12 +1,12 @@
-/* .App {
-  text-align: center;
-  justify-content: space-evenly;
-  margin: auto;
-  background-color: #7eca9c;
-  columns: 3 auto;
+.App {
+background-color: #90d8f0;
+text-align: center;
 }
 
 .characterContainer {
-  width: 150px;
   height: 300px;
-} */
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  padding: 20px;
+}
