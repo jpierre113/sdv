@@ -165,6 +165,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
+        <img src="./stardew-logo.png"  classname="Stardew-Logo" class="img-fluid"/>
           {
             this.state.characters.map((character, index) => {
               return (
