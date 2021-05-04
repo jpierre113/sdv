@@ -26,7 +26,7 @@ hideCharacterModal = () => {
         <Iconimg
         avatar={this.props.photo}
         />
-        <p>{this.props.title}</p>
+        <p class= "characterName">{this.props.title}</p>
         <CharacterModal show={this.state.show}
           handleClose={this.hideCharacterModal}
           about={this.props.about}

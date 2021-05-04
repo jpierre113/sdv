@@ -60,7 +60,7 @@ class App extends Component {
           name: "Hayley",
           photo: "./hayley.png",
           birthday: "Spring 14",
-          about: "Haley loves taking photos with her camera and keeping up to date with all the latest fashion trends."
+          about: "Hayley loves taking photos with her camera and keeping up to date with all the latest fashion trends."
         },
         {
           name: "Harvey",
@@ -108,13 +108,37 @@ class App extends Component {
           name: "Maru",
           photo: "./maru.png",
           birthday: "Fall 18",
-          about: "Maru Maru grew up with a carpenter and a scientist for parents and she acquired a passion for creating gadgets at a young age. When she isn’t in her room, fiddling with tools and machinery, she sometimes does odd jobs at the local clinic."
+          about: "Maru grew up with a carpenter and a scientist for parents and she acquired a passion for creating gadgets at a young age. When she isn’t in her room, fiddling with tools and machinery, she sometimes does odd jobs at the local clinic."
+        },
+        {
+          name: "Pam",
+          photo: "./pam.png",
+          birthday: "Spring 18",
+          about: "Pam lives in a trailer with her daugther Penny and operates the bus when it is fixed."
+        },
+        {
+          name: "Penny",
+          photo: "./penny.png",
+          birthday: "Fall 2",
+          about: "Penny lives with her mom, Pam, in a little trailer by the river. She also serves as a teacher to Vincent and Jas, which she admits isn't always easy, though she still enjoys doing it."
         },
         {
           name: "Robin",
           photo: "./robin.png",
           birthday: "Fall 21",
           about: "Robin is the local carpenter of Stardew Valley who is sent to greet you by Mayor Lewis when you first arrive in the valley. She can be found in the Carpenter's Shop where the player can buy house upgrades, new buildings, and home decorations."
+        },
+        {
+          name: "Sam",
+          photo: "./sam.png",
+          birthday: "Summer 17",
+          about: "Sam lives in Pelican Town with his mother Jodi and his little brother Vincent. He is an easygoing, friendly guy who likes to play guitar and skateboard."
+        },
+        {
+          name: "Sandy",
+          photo: "./sandy.png",
+          birthday: "Fall 15",
+          about: "Sandy lives and works in Calico Desert. She has a soft spot for the lush greenery of Stardew Valley."
         },
         {
           name: "Sebastian",
@@ -127,6 +151,12 @@ class App extends Component {
           photo: "./shane.png",
           birthday: "Spring 20",
           about:"Shane lives with his aunt Marnie and rents a room at her ranch, where he helps out by taking care of the chickens. He also works as a stock clerk at JoJaMart and spends his free time in the Stardrop Saloon."
+        },
+        {
+          name: "Vincent",
+          photo: "./vincent.png",
+          birthday: "Spring 10",
+          about:"Vincent lives with his mother Jodi and older brother Sam in Pelican Town. He, along with Jas are occasionally tutored by Penny."
         }
       ]
     }
@@ -135,6 +165,7 @@ class App extends Component {
   render () {
     return (
       <div className="App">
+        <img src="./stardew-logo.png"  classname="Stardew-Logo" class="img-fluid"/>
           {
             this.state.characters.map((character, index) => {
               return (
